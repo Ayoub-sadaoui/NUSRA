@@ -1,15 +1,22 @@
 import { MdOutlineContentCopy } from "react-icons/md";
 import { useGlobalContext } from "../components/Context";
+import { ToastContainer, toast } from "react-toastify";
 
 const FooterButton = ({ text, text2 }) => {
   const { theme } = useGlobalContext();
   const copy = (text) => {
     if (text2) {
+      try {
+        navigator.clipboard.writeText(text);
+        toast.success(` "${text}" coppied`);
+      } catch (err) {
+        console.error(err);
+      }
     }
   };
   return (
     <button
-      onClick={copy(text)}
+      onClick={() => copy(text)}
       className={`${
         theme === "myLight" ? "bg-white " : "border border-black "
       } text-black  group relative  text-xl rounded-lg px-10 py-2 font-Aljazeera flex justify-between mt-5 w-full`}

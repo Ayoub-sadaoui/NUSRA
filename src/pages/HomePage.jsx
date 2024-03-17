@@ -1,9 +1,11 @@
+import { ToastContainer } from "react-toastify";
 import { Hero, AboutUs, Goal, Contact, Footer } from "../sections";
 import Why from "../sections/Why";
 
 const HomePage = () => {
   return (
     <div>
+      <ToastContainer position="top-center" />
       <main className="relative w-full ">
         <Hero />
         <section>
