@@ -1,10 +1,15 @@
 import { MdOutlineContentCopy } from "react-icons/md";
 import { useGlobalContext } from "../components/Context";
 
-const FooterButton = ({ text, text2, image }) => {
+const FooterButton = ({ text, text2 }) => {
   const { theme } = useGlobalContext();
+  const copy = (text) => {
+    if (text2) {
+    }
+  };
   return (
     <button
+      onClick={copy(text)}
       className={`${
         theme === "myLight" ? "bg-white " : "border border-black "
       } text-black  group relative  text-xl rounded-lg px-10 py-2 font-Aljazeera flex justify-between mt-5 w-full`}
@@ -12,10 +17,8 @@ const FooterButton = ({ text, text2, image }) => {
       <p className="w-20">{text}</p>
       {text2 && (
         <div className=" border-l-black border-l-2 w-[50%] pl-3 flex items-center text-right">
-          <MdOutlineContentCopy className="w-4 group-hover:text-orange-500" />
-          <p className=" flex text-right group-hover:text-orange-500">
-            {text2}
-          </p>
+          <MdOutlineContentCopy className="w-4 group-hover:text-primary" />
+          <p className=" flex text-right group-hover:text-primary">{text2}</p>
         </div>
       )}
       <div className="absolute top-0 left-0 w-full h-full">

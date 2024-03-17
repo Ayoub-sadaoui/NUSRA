@@ -6,7 +6,7 @@ import ThemTogglingpc from "../components/ThemTogglingpc";
 const Header = () => {
   const { openSidebar, isSidebarOpen } = useGlobalContext();
   return (
-    <header className="px-10  md:px-20 bg-base-100 w-full h-auto rounded-b-xl absolute z-20">
+    <header className="px-10  md:px-20 bg-base-100 w-full h-auto rounded-b-xl absolute top-0 z-20">
       {isSidebarOpen ? (
         <div>
           <Sidebar className="text-xl" />
@@ -23,7 +23,7 @@ const Header = () => {
           <div className="max-md:hidden  sm:flex sm:items-center gap-3 md:gap-5 ">
             <ThemTogglingpc />
 
-            <button className="px-4 flex items-center gap-1 ml-5 lg:ml-10 rounded-xl border-[2.5px] hover:bg-orange-500 hover:text-white border-orange-500 text-orange-500 font-[400] font-Aljazeera text-2xl lg:text-3xl">
+            <button className="px-4 active:scale-95 active:duration-100  flex items-center gap-1 ml-5 lg:ml-10 rounded-xl border-[2.5px] hover:bg-primary hover:text-white border-primary text-primary font-[400] font-Aljazeera text-2xl lg:text-3xl">
               <svg
                 width="25"
                 height="18"
@@ -38,7 +38,7 @@ const Header = () => {
               </svg>
               تعرف علينا
             </button>
-            <button className="px-4  rounded-xl border-[2.5px] hover:bg-orange-500 hover:text-white  border-orange-500 text-orange-500 font-[400] font-Aljazeera text-2xl lg:text-3xl">
+            <button className="px-4 active:scale-95 duration-100 rounded-xl border-[2.5px] hover:bg-primary hover:text-white  border-primary text-primary font-[400] font-Aljazeera text-2xl lg:text-3xl">
               تواصل معنا
             </button>
           </div>
@@ -54,7 +54,7 @@ const Header = () => {
           </div>
         </nav>
       )}
-      <div className="w-full h-[1px] bg-black max-sm:hidden "></div>
+      <div className="w-full h-[1px] bg-black max-md:hidden "></div>
     </header>
   );
 };

@@ -16,14 +16,14 @@ const CardHowPc = ({ image, title, text }) => {
       />
 
       <h1
-        className={` text-white font-Aljazeera px-10 text-[42px] w-full text-center transition-opacity absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]
+        className={` text-white font-Aljazeera px-10 text-[42px] w-full text-center transition-opacity  absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]
          ${show ? "block" : "hidden"}`}
       >
         {title}
       </h1>
 
       <h1
-        className={`  text-center text-3xl  text-white font-Aljazeera absolute transition-all ${
+        className={`  text-center text-3xl  text-white font-Aljazeera absolute transition-all duration-500 ${
           show ? "-top-40" : "top-10"
         } `}
       >
@@ -31,7 +31,7 @@ const CardHowPc = ({ image, title, text }) => {
       </h1>
       <p
         className={`text-lg text-center leading-6 absolute bg-gradient-to-t from-black to-transparent text-white px-5 pb-12 pt-7 ${
-          show ? "-bottom-40" : "bottom-0 transition-all"
+          show ? "-bottom-40" : "bottom-0 transition-all duration-500"
         }`}
       >
         {text}

@@ -30,8 +30,17 @@ const ThemTogglingpc = () => {
           strokeLinecap="round"
           strokeLinejoin="round"
         >
-          <circle cx="12" cy="12" r="5" />
-          <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+          <circle
+            cx="12"
+            cy="12"
+            r="5"
+            stroke={`${theme === "myLight" && "#F79122"}`}
+            fill={`${theme === "myLight" && "#F79122"}`}
+          />
+          <path
+            stroke={`${theme === "myLight" && "#F79122"}`}
+            d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"
+          />
         </svg>
         <svg
           className="col-start-2 row-start-1 stroke-base-100 fill-base-100"
@@ -39,8 +48,8 @@ const ThemTogglingpc = () => {
           width="14"
           height="14"
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
+          fill="#F79122"
+          stroke="#F79122"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"

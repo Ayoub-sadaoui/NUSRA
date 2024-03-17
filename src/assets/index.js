@@ -16,6 +16,7 @@ import goalpc1 from "./goalpc1.png";
 import goalpc2 from "./goalpc2.png";
 import goalpc3 from "./goalpc3.png";
 import copyicon from "./copyicon.png";
+import olivetree from "./oliveTree.png";
 
 export {
   logo,
@@ -36,4 +37,5 @@ export {
   goalpc2,
   goalpc3,
   copyicon,
+  olivetree,
 };

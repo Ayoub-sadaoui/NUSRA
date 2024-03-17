@@ -4,35 +4,31 @@ import Title from "../components/Title";
 
 const Hero = () => {
   return (
-    <div className="flex max-md:flex-col	relative max-lg:items-center lg:items-center   md:flex-row  px-20 sm:pt-20 ">
+    <div className="flex max-md:flex-col	relative items-center  sm:mt-24  lg:mt-40 xl:mt-20    md:flex-row  px-20 ">
       <div className="absolute  top-0 left-0 w-full   sm:w-[50%] sm:relative sm:mt-5">
         <img src={background} alt="background" className="w-full xs:hidden " />
+        <img src={background2} alt="background2" className="max-md:hidden " />
+      </div>
+
+      <div className="max-xs:hidden md:hidden absolute max-sm:pt-20 top-20 bottom-0 grid place-items-center w-full max-lg:-mt-20 h-fit  brightness-[0.4] bg-white ">
         <img
           src={background2}
           alt="background2"
-          className="max-md:hidden max-lg:-mt-20  "
+          className="w-full max-w-[600px]"
         />
       </div>
 
-      <div className="max-xs:hidden md:hidden absolute top-20 bottom-0 grid place-items-center w-full max-lg:-mt-20  brightness-[0.4] bg-white ">
-        <img
-          src={background2}
-          alt="background2"
-          className="w-full max-w-[650px]"
-        />
-      </div>
-
-      <button className=" sm:hidden bg-white font-bold border-orange-500 border-[3px] rounded-full py-2 px-4 text-orange-500 absolute top-[120px] left-3">
+      <button className=" sm:hidden bg-white font-bold border-primary border-[3px] rounded-full py-2 px-4 text-primary absolute top-[100px] left-3">
         تواصل معنا
       </button>
 
-      <div className=" max-sm:absolute  sm:relative z-10 flex items-center md:items-end flex-col   max-sm:mt-[120px]  md:w-[50%] max-md:px-10 ">
+      <div className=" sm:max-lg:mb-10 md:mt-10 max-sm:absolute  sm:relative z-10 flex items-center md:items-end flex-col   max-sm:mt-[100px]  md:w-[50%] max-md:px-10  ">
         <Title />
         <h1 className="sm:text-[60px] text-secondary lg:text-[70px] xl:text-[96px] leading-[100%]  font-normal  text-center md:text-right max-md:hidden  font-Aljazeera">
           نوجد لك طريق
-          <span className="text-orange-500"> المساعدة </span>
+          <span className="text-primary"> المساعدة </span>
         </h1>
-        <p className="max-sm:hidden text-secondary text-center md:text-right font-Aljazeera text-xl lg:text-3xl mt-4 ">
+        <p className="max-sm:hidden max-md:text-white text-secondary text-center md:text-right font-Aljazeera text-xl lg:text-3xl mt-4 ">
           نصرة عبارة عن مجتمع الكتروني متكون من كل من لديهم هدف نصرة القضية
           الفلسطينية من اجل ايجاد طرق المساهمة في الدعم على حسب مهارات و قدرات
           كل فرد
@@ -42,11 +38,11 @@ const Hero = () => {
           مجتمع الكتروني متكون من كل من لديهم هدف نصرة القضية
         </p>
 
-        <div className="grid justify-center max-md:items-center  gap-2 mt-9">
-          <button className="lg:px-10 lg:py-4  px-6 py-2 rounded-xl bg-orange-500 hover:shadow text-white  font-[400] font-Aljazeera text-2xl lg:text-[42px]">
+        <div className="grid justify-center max-md:items-center  gap-2 mt-8">
+          <button className="lg:px-10 lg:py-4  px-6 py-2 hover:bg-primary active:scale-95 duration-100 duration-100  rounded-xl bg-primary hover:shadow text-white  font-[400] font-Aljazeera text-2xl lg:text-[42px]">
             إضغط للتسجيل
           </button>
-          <button className="px-4 py-2  flex  items-center justify-center  rounded-lg border-[3px] hover:bg-orange-500   border-white text-white  font-Aljazeera sm:hidden text-xl">
+          <button className="px-4 py-2  flex  items-center justify-center  rounded-lg border-[3px] hover:bg-primary   border-white text-white  font-Aljazeera sm:hidden text-xl">
             <svg
               width="25"
               height="18"
