@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section-padding {
+    @apply px-[29px];
+  }
+  .bg-footer {
+    @apply bg-black;
+  }
+}
+
+@font-face {
+  font-family: "Aljazeera";
+  src: url("C:\Users\Almrf\Documents\ayoub\React.js\nusra-pala\src\assets\alfont_com_AlFont_com_Aljazeera-1.ttf");
+}
+
+#rect {
+  stroke-dasharray: 820;
+  stroke-dashoffset: 900;
+  transition: 1s smooth;
+}
+#rect:hover {
+  animation: animate 1.5s linear forwards 1;
+}
+
+@keyframes animate {
+  0% {
+    stroke-dashoffset: 820;
+  }
+  50% {
+    stroke-dashoffset: 410;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
