@@ -1,6 +1,6 @@
 import { MdOutlineContentCopy } from "react-icons/md";
 import { useGlobalContext } from "../components/Context";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 const FooterButton = ({ text, text2 }) => {
   const { theme } = useGlobalContext();
@@ -8,7 +8,7 @@ const FooterButton = ({ text, text2 }) => {
     if (text2) {
       try {
         navigator.clipboard.writeText(text);
-        toast.success(` "${text}" coppied`);
+        toast.success(` "${text}"2 coppied`);
       } catch (err) {
         console.error(err);
       }

@@ -37,9 +37,9 @@ const Footer = () => {
 
       <div className="max-lg:px-14 bg-neutral-content  w-full flex flex-col max-sm:hidden items-center py-14">
         <div className="w-full  flex flex-wrap gap-y-20 flex-row-reverse justify-between items-start pb-14 px-5 max-sm:hidden">
-          <div className="flex flex-col items-center border-l-primary border-l-4">
+          <div className="flex flex-col items-center border-l-primary border-l-4 pl-10">
             <img src={orangeLogo} alt="" />
-            <button className="border-4 active:scale-95 duration-100 w-fit border-primary font-Aljazeera text-primary hover:text-white hover:border-white px-8 rounded-2xl lg:text-[40px] text-3xl ">
+            <button className="border-4 active:scale-95 duration-100 w-fit border-primary font-Aljazeera text-primary hover:text-neutral hover:border-neutral px-8 py-1 rounded-2xl lg:text-[40px] text-3xl ">
               التسجيل
             </button>
           </div>

@@ -36,3 +36,15 @@
     stroke-dashoffset: 0;
   }
 }
+
+.sp {
+  transform: translate(-101%, 60%);
+  transition: transform 0.3s ease-in;
+  border-radius: 50%;
+  background-color: #f79122;
+  position: absolute;
+  z-index: -10;
+}
+.btn2:hover span {
+  transform: translate(0%, -10%);
+}
