@@ -35,12 +35,12 @@ const Sidebar = () => {
               <p className="text-right text-xl text-secondery ">الوضع الداكن</p>
             </div>
           </li>
-          <li className="border-b-2 border-0 border-solid py-4 px-4 border-b-gray-300 ">
+          {/* <li className="border-b-2 border-0 border-solid py-4 px-4 border-b-gray-300 ">
             <div className="flex justify-between items-center">
               <LanToggling />
               <p className="text-right text-xl text-secondery ">اللغة</p>
             </div>
-          </li>
+          </li> */}
         </ul>
       </div>
 

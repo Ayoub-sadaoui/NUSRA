@@ -3,6 +3,7 @@ import { bars, logo } from "../assets";
 import Sidebar from "../components/Sidebar";
 import { useGlobalContext } from "../components/Context";
 import ThemTogglingpc from "../components/ThemTogglingpc";
+import MyThemToggle from "../components/MyThemToggle";
 const Header = () => {
   const { openSidebar, isSidebarOpen } = useGlobalContext();
   return (
@@ -21,8 +22,7 @@ const Header = () => {
             )}
           </div>
           <div className="max-md:hidden  sm:flex sm:items-center gap-3 md:gap-5 ">
-            <ThemTogglingpc />
-
+            <MyThemToggle />
             <button className="px-4 group relative hover:delay-200 active:delay-0 overflow-hidden active:scale-95 active:duration-100  flex items-center gap-1 ml-5 lg:ml-10 rounded-xl border-[2.5px]  hover:text-white border-primary text-primary font-[400] font-Aljazeera text-2xl lg:text-3xl">
               <svg
                 width="25"
