@@ -1,6 +1,7 @@
 import { ToastContainer } from "react-toastify";
-import { Hero, AboutUs, Goal, Contact, GoalPhone, Footer } from "../sections";
+import { Hero, AboutUs, Goal, Contact, Footer } from "../sections";
 import Why from "../sections/Why";
+import GoalPhone from "../sections/GoalPhone";
 
 const HomePage = () => {
   return (
@@ -14,7 +15,7 @@ const HomePage = () => {
         <section className="max-sm:mt-[700px] max-md:mt-40">
           <AboutUs />
         </section>
-        <section className="max-sm:mt-[700px] max-md:mt-40">
+        <section className="max-sm:mt-10 max-md:mt-20">
           <GoalPhone />
         </section>
         <section className="max-sm:mt-10 " id="how">

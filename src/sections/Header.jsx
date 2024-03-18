@@ -5,11 +5,18 @@ import { useGlobalContext } from "../components/Context";
 import ThemTogglingpc from "../components/ThemTogglingpc";
 import MyThemToggle from "../components/MyThemToggle";
 const Header = () => {
-  const { openSidebar, isSidebarOpen } = useGlobalContext();
+  const { openSidebar, isSidebarOpen, theme } = useGlobalContext();
+
   const flyerUrl =
     "https://drive.google.com/file/d/1JSPz_Jyenk2AiiXYJ6XeooQ--weObpls/view";
   return (
-    <header className="px-10  md:px-20 bg-base-100 w-full h-auto rounded-b-xl fixed sm:bg-transparent sm:backdrop-blur-md top-0 z-40 max-sm:shadow-xl">
+    <header
+      className={`px-10  md:px-20 bg-base-100 w-full h-auto rounded-b-xl 
+     absolute sm:fixed ${
+       theme === "myLight" ? "sm:bg-transparent" : "bg-transparent"
+     } sm:backdrop-blur-md top-0 z-40 
+     max-sm:pt-1`}
+    >
       {isSidebarOpen ? (
         <div className="sm:hidden">
           <Sidebar className="text-xl" />

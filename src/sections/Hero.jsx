@@ -40,7 +40,11 @@ const Hero = () => {
 
         <div className="grid justify-center max-md:items-center  gap-2 mt-8">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWK_KXrB1bNITfYQ06ZB-UoTAyR3gxe35XRmg-zPZzQt0hDQ/viewform">
-            <button className="lg:px-10 lg:py-4 hover:bg-[#d08118] px-6 py-2 active:scale-95  active:duration-100  rounded-xl bg-primary hover:shadow text-white  font-[400] font-Aljazeera text-2xl lg:text-[42px]">
+            <button
+              className="lg:px-10 lg:py-4  px-6 py-2 rounded-xl font-[400] font-Aljazeera text-2xl lg:text-[42px]
+             active:scale-95  active:duration-100   
+            bg-primary hover:bg-[#d08118] hover:shadow text-white  "
+            >
               إضغط للتسجيل
             </button>
           </a>

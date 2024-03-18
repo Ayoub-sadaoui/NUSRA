@@ -38,9 +38,9 @@ const FooterButton = ({ text, text2 }) => {
           <rect
             id="rect"
             width="100%"
-            height="43"
+            height="42"
             x="0"
-            y="0"
+            y="1.3"
             rx="12"
             ry="12"
             fill="transparent"
