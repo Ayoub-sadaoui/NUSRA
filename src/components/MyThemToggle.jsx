@@ -32,7 +32,7 @@ const MyThemToggle = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_544_1756)">
+                <g clipPath="url(#clip0_544_1756)">
                   <rect width="190" height="80" rx="40" fill="#012677" />
                   <rect x="17" width="173" height="80" rx="40" fill="#0C348D" />
                   <rect x="32" width="158" height="80" rx="40" fill="#133D9B" />
@@ -46,7 +46,7 @@ const MyThemToggle = () => {
                       height="80"
                       rx="40"
                       fill="#1E1E1E"
-                      fill-opacity="0.01"
+                      fillOpacity="0.01"
                     />
                   </g>
                   <path
@@ -205,19 +205,19 @@ const MyThemToggle = () => {
                     d="M85.9416 25.3333L86.4833 22.9917L84.6666 21.4167L87.0666 21.2083L88 19L88.9333 21.2083L91.3333 21.4167L89.5166 22.9917L90.0583 25.3333L88 24.0917L85.9416 25.3333Z"
                     fill="white"
                   />
-                  <g clip-path="url(#clip1_544_1756)">
+                  <g clipPath="url(#clip1_544_1756)">
                     <path
                       d="M65.9709 9.66667L66.2417 8.49583L65.3334 7.70833L66.5334 7.60417L67 6.5L67.4667 7.60417L68.6667 7.70833L67.7584 8.49583L68.0292 9.66667L67 9.04583L65.9709 9.66667Z"
                       fill="white"
                     />
                   </g>
-                  <g clip-path="url(#clip2_544_1756)">
+                  <g clipPath="url(#clip2_544_1756)">
                     <path
                       d="M43.9709 20.6667L44.2417 19.4958L43.3334 18.7083L44.5334 18.6042L45 17.5L45.4667 18.6042L46.6667 18.7083L45.7584 19.4958L46.0292 20.6667L45 20.0458L43.9709 20.6667Z"
                       fill="white"
                     />
                   </g>
-                  <g clip-path="url(#clip3_544_1756)">
+                  <g clipPath="url(#clip3_544_1756)">
                     <path
                       d="M122.214 7.58333L122.552 6.11979L121.417 5.13542L122.917 5.00521L123.5 3.625L124.083 5.00521L125.583 5.13542L124.448 6.11979L124.786 7.58333L123.5 6.80729L122.214 7.58333Z"
                       fill="white"
@@ -232,9 +232,9 @@ const MyThemToggle = () => {
                     width="190"
                     height="84"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                   >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                       mode="normal"
                       in="SourceGraphic"
@@ -302,7 +302,7 @@ const MyThemToggle = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_544_1704)">
+                <g clipPath="url(#clip0_544_1704)">
                   <rect width="190" height="80" rx="40" fill="#683F06" />
                   <rect x="17" width="173" height="80" rx="40" fill="#975F00" />
                   <rect x="32" width="158" height="80" rx="40" fill="#BE7E00" />
@@ -316,7 +316,7 @@ const MyThemToggle = () => {
                       height="80"
                       rx="40"
                       fill="#1E1E1E"
-                      fill-opacity="0.01"
+                      fillOpacity="0.01"
                     />
                   </g>
                   <path
@@ -420,9 +420,9 @@ const MyThemToggle = () => {
                     width="190"
                     height="84"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                   >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                       mode="normal"
                       in="SourceGraphic"

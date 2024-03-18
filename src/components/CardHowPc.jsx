@@ -30,7 +30,7 @@ const CardHowPc = ({ image, title, text }) => {
         {title}
       </h1>
       <p
-        className={`text-lg text-center leading-6 absolute bg-gradient-to-t from-black to-transparent text-white px-5 pb-12 pt-7 ${
+        className={`text-lg text-center leading-6 absolute bg-gradient-to-t from-black font-Aljazeera to-transparent text-white px-5 pb-12 pt-7 ${
           show ? "-bottom-40" : "bottom-0 transition-all duration-500"
         }`}
       >

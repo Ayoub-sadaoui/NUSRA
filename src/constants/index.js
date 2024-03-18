@@ -11,17 +11,6 @@ import {
   goalpc1,
   goalpc2,
   goalpc3,
-  phonePc,
-  emailPc,
-  socialPc,
-  cTikDark,
-  cTikLight,
-  cFaceDark,
-  cFaceLight,
-  cInstDark,
-  cInstLight,
-  cYouDark,
-  cYouLight,
 } from "../assets";
 
 export const navLinks = [
@@ -51,30 +40,10 @@ export const footerLinks2 = [
 ];
 
 export const socialMedia = [
-  {
-    iconLight: cInstLight,
-    iconDark: cInstDark,
-    link: "instagram",
-    text: "إنستغرام",
-  },
-  {
-    iconLight: cFaceLight,
-    iconDark: cFaceDark,
-    link: "facebook",
-    text: "فيسبوك",
-  },
-  {
-    iconLight: cTikLight,
-    iconDark: cTikDark,
-    link: "tiktok",
-    text: "تيكتوك",
-  },
-  {
-    iconLight: cYouLight,
-    iconDark: cYouDark,
-    link: "youtube",
-    text: "يوتيوب",
-  },
+  { icon: instagram, link: "instagram", text: "إنستغرام" },
+  { icon: facebook, link: "facebook", text: "فيسبوك" },
+  { icon: tiktok, link: "tiktok", text: "تيكتوك" },
+  { icon: youtube, link: "youtube", text: "يوتيوب" },
 ];
 
 export const carousel = [

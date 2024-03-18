@@ -2,6 +2,7 @@ import { ToastContainer } from "react-toastify";
 import { Hero, AboutUs, Goal, Footer } from "../sections";
 import Why from "../sections/Why";
 import GoalPhone from "../sections/GoalPhone";
+import Where from "../sections/Where";
 
 const HomePage = () => {
   return (
@@ -15,11 +16,14 @@ const HomePage = () => {
         <section className="max-sm:mt-[700px] max-md:mt-40">
           <AboutUs />
         </section>
-        <section className="max-sm:mt-10 max-md:mt-20">
+        <section className="max-sm:mt-10 max-md:mt-20 ">
           <GoalPhone />
         </section>
-        <section className="max-sm:mt-10 " id="how">
+        <section className="max-sm:mt-10 md:mt-20 " id="how">
           <Goal />
+        </section>
+        <section>
+          <Where />
         </section>
 
         <section>
