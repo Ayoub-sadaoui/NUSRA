@@ -8,13 +8,13 @@ const HomePage = () => {
       <ToastContainer position="top-center" />
       <main className="relative w-full ">
         <Hero />
-        <section>
+        <section id="why">
           <Why />
         </section>
         <section className="max-sm:mt-[700px] max-md:mt-40">
           <AboutUs />
         </section>
-        <section className="max-sm:mt-10 ">
+        <section className="max-sm:mt-10 " id="how">
           <Goal />
         </section>
 

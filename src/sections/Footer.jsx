@@ -39,9 +39,11 @@ const Footer = () => {
         <div className="w-full  flex flex-wrap gap-y-20 flex-row-reverse justify-between items-start pb-14 px-5 max-sm:hidden">
           <div className="flex flex-col items-center border-l-primary border-l-4 pl-10">
             <img src={orangeLogo} alt="" />
-            <button className="border-4 active:scale-95 duration-100 w-fit border-primary font-Aljazeera text-primary hover:text-neutral hover:border-neutral px-8 py-1 rounded-2xl lg:text-[40px] text-3xl ">
-              التسجيل
-            </button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWK_KXrB1bNITfYQ06ZB-UoTAyR3gxe35XRmg-zPZzQt0hDQ/viewform">
+              <button className="border-4 active:scale-95 duration-100 w-fit border-primary font-Aljazeera text-primary hover:text-neutral hover:border-neutral px-8 py-1 rounded-2xl lg:text-[40px] text-3xl ">
+                التسجيل
+              </button>
+            </a>
           </div>
           <ul className="flex flex-col justify-center items-left gap-3 mt-4 px-10">
             <h2 className="lg:text-[45px] text-3xl font-Aljazeera text-neutral text-center">
@@ -81,7 +83,9 @@ const Footer = () => {
             </h2>
             <div className="mt-10">
               <div className="flex gap-2">
-                <FooterButton text="تواصل معنا" />
+                <a href="#contact">
+                  <FooterButton text="تواصل معنا" />
+                </a>
                 <FooterButton text="إتصل بنا" />
               </div>
               <FooterButton text="0780502844" text2="إنسخ الرقم" />

@@ -29,9 +29,12 @@ export const footerLinks = [
   { href: "#contact-us", label: "تابعونا" },
 ];
 export const footerLinks2 = [
-  { href: "#home", label: "التسجيل" },
-  { href: "#about-us", label: " لماذا نصرة؟" },
-  { href: "#products", label: "كيف تشارك" },
+  {
+    href: "https://docs.google.com/forms/d/e/1FAIpQLSfWK_KXrB1bNITfYQ06ZB-UoTAyR3gxe35XRmg-zPZzQt0hDQ/viewform",
+    label: "التسجيل",
+  },
+  { href: "#why", label: " لماذا نصرة؟" },
+  { href: "#how", label: "كيف تشارك" },
   { href: "#contact-us", label: "أين تجدنا؟" },
   { href: "#contact-us", label: "  " },
 ];

@@ -39,9 +39,11 @@ const Hero = () => {
         </p>
 
         <div className="grid justify-center max-md:items-center  gap-2 mt-8">
-          <button className="lg:px-10 lg:py-4  px-6 py-2 hover:bg-primary active:scale-95 duration-100 duration-100  rounded-xl bg-primary hover:shadow text-white  font-[400] font-Aljazeera text-2xl lg:text-[42px]">
-            إضغط للتسجيل
-          </button>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWK_KXrB1bNITfYQ06ZB-UoTAyR3gxe35XRmg-zPZzQt0hDQ/viewform">
+            <button className="lg:px-10 lg:py-4  px-6 py-2 hover:bg-primary active:scale-95  duration-100  rounded-xl bg-primary hover:shadow text-white  font-[400] font-Aljazeera text-2xl lg:text-[42px]">
+              إضغط للتسجيل
+            </button>
+          </a>
           <button className="px-4 py-2  flex  items-center justify-center  rounded-lg border-[3px] hover:bg-primary   border-white text-white  font-Aljazeera sm:hidden text-xl">
             <svg
               width="25"
