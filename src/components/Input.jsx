@@ -1,6 +1,5 @@
 import { inputChange } from "../utils";
 import { useGlobalContext } from "../components/Context";
-import { data } from "autoprefixer";
 
 const Input = ({ type, name, placeholder }) => {
   const { updateData, data } = useGlobalContext();
