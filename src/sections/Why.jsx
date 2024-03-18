@@ -7,11 +7,11 @@ const Why = () => {
   return (
     <section className="flex max-md:flex-col max-lg:hidden relative max-lg:items-center lg:items-center  h-screen md:flex-row  px-20 sm:pt-20 ">
       <div className="   sm:relative z-10 flex items-center md:items-end flex-col   max-sm:mt-[120px]  md:w-[50%] max-md:px-10 ">
-        <h1 className="sm:text-[60px] lg:text-[70px] xl:text-[96px] leading-[100%]  font-normal text-white sm:text-black text-center md:text-right   font-Aljazeera">
+        <h1 className="sm:text-[60px] lg:text-[70px] xl:text-[96px] leading-[100%]  font-normal text-white sm:text-secondary text-center md:text-right   font-Aljazeera">
           لماذا
           <span className="text-primary"> “نصرة” </span>؟
         </h1>
-        <p className="max-sm:hidden text-neutral sm:text-secondary text-center md:text-right font-Aljazeera text-xl lg:text-3xl mt-4 tracking-wide">
+        <p className="max-sm:hidden text-secondary  sm:text-secondary text-center md:text-right font-Aljazeera text-xl lg:text-3xl mt-4 tracking-wide">
           في الوقت الحالي الذي نعيشه و الحرب المستمرة, يزيد الواقع سوءًا يومًا
           بعد يوم، حيث تتزايد أعداد القتلى وتضعف صفوف المدافعين, إضافة إلى قصف
           الطائرات, فإن الجوع و البرد أصبح يخطف أرواح عشرات الأطفال و الأبرياء

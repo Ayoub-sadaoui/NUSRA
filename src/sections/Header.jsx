@@ -9,7 +9,7 @@ const Header = () => {
   const flyerUrl =
     "https://drive.google.com/file/d/1JSPz_Jyenk2AiiXYJ6XeooQ--weObpls/view";
   return (
-    <header className="px-10  md:px-20 bg-base-100 w-full h-auto rounded-b-xl fixed bg-transparent backdrop-blur-md top-0 z-40">
+    <header className="px-10  md:px-20 bg-base-100 w-full h-auto rounded-b-xl fixed sm:bg-transparent sm:backdrop-blur-md top-0 z-40 max-sm:shadow-xl">
       {isSidebarOpen ? (
         <div className="sm:hidden">
           <Sidebar className="text-xl" />
@@ -56,14 +56,18 @@ const Header = () => {
             alt="langToggle"
             className="w-[80px]"
           /> */}
-          <div onClick={openSidebar} className="flex gap-4">
+          <div onClick={openSidebar} className="flex gap-4 py-1">
             <a href="/">
-              <img src={logo} alt="logo" className=" h-[90px] lg:h-[110px]  " />
+              <img
+                src={logo}
+                alt="logo"
+                className=" h-[60px] md:h-[80px] lg:h-[100px]  "
+              />
             </a>
           </div>
         </nav>
       )}
-      <div className="w-full h-[1px] bg-black max-md:hidden "></div>
+      <div className="w-full h-[1px] bg-secondary max-md:hidden "></div>
     </header>
   );
 };
