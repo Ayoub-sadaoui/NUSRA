@@ -14,8 +14,8 @@ const Input = ({ type, name, placeholder }) => {
       placeholder={placeholder}
       onChange={handleChange}
       name={name}
-      value={data.name}
-      className="input input-bordered  md:input-lg sm:border-x-0 sm:border-t-0  xs:shadow-none sm:rounded-none w-full  text-right sm:border-b-[1px] sm:border-b-secondary"
+      // value={data.name}
+      className="input input-bordered  text-neutral-content md:input-lg sm:border-x-0 sm:border-t-0  xs:shadow-none sm:rounded-none w-full  text-right sm:border-b-[1px] sm:border-b-secondary"
     />
   );
 };
