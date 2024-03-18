@@ -5,7 +5,7 @@ const Why = () => {
     "https://drive.google.com/file/d/1JSPz_Jyenk2AiiXYJ6XeooQ--weObpls/view";
 
   return (
-    <section className="flex max-md:flex-col max-lg:hidden relative max-lg:items-center lg:items-center  h-screen md:flex-row  px-20 sm:pt-20 ">
+    <section className="flex max-md:flex-col max-md:hidden relative max-lg:items-center lg:items-center  h-screen md:flex-row  px-20 sm:pt-20 ">
       <div className="   sm:relative z-10 flex items-center md:items-end flex-col   max-sm:mt-[120px]  md:w-[50%] max-md:px-10 ">
         <h1 className="sm:text-[60px] lg:text-[70px] xl:text-[96px] leading-[100%]  font-normal text-white sm:text-secondary text-center md:text-right   font-Aljazeera">
           لماذا

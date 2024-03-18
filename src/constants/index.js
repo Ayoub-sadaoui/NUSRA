@@ -11,6 +11,10 @@ import {
   goalpc1,
   goalpc2,
   goalpc3,
+  instapic,
+  facebookpic,
+  youtubepic,
+  tiktokpic,
 } from "../assets";
 
 export const navLinks = [
@@ -40,10 +44,10 @@ export const footerLinks2 = [
 ];
 
 export const socialMedia = [
-  { icon: instagram, link: "instagram", text: "إنستغرام" },
-  { icon: facebook, link: "facebook", text: "فيسبوك" },
-  { icon: tiktok, link: "tiktok", text: "تيكتوك" },
-  { icon: youtube, link: "youtube", text: "يوتيوب" },
+  { icon: instagram, link: "instagram", text: "إنستغرام", image: instapic },
+  { icon: facebook, link: "facebook", text: "فيسبوك", image: facebookpic },
+  { icon: tiktok, link: "tiktok", text: "تيكتوك", image: youtubepic },
+  { icon: youtube, link: "youtube", text: "يوتيوب", image: tiktokpic },
 ];
 
 export const carousel = [

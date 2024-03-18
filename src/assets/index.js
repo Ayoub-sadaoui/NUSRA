@@ -17,7 +17,10 @@ import goalpc2 from "./goalpc2.png";
 import goalpc3 from "./goalpc3.png";
 import copyicon from "./copyicon.png";
 import olivetree from "./oliveTree.png";
-
+import instapic from "./instapic.png";
+import facebookpic from "./facebookpic.png";
+import youtubepic from "./youtubepic.png";
+import tiktokpic from "./tiktokpic.png";
 export {
   logo,
   arabic,
@@ -38,4 +41,8 @@ export {
   goalpc3,
   copyicon,
   olivetree,
+  instapic,
+  facebookpic,
+  youtubepic,
+  tiktokpic,
 };

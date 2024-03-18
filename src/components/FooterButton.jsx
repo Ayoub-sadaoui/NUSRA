@@ -17,13 +17,13 @@ const FooterButton = ({ text, text2 }) => {
   return (
     <button
       onClick={() => copy(text)}
-      className={`${
-        theme === "myLight" ? "bg-white " : "border border-black "
-      } text-black  group relative  text-xl rounded-lg px-10 py-2 font-Aljazeera flex justify-between mt-5 w-full`}
+      className={`
+      text-black bg-white group relative  text-xl rounded-lg
+       px-10 py-2 font-Aljazeera flex justify-between mt-5 w-full`}
     >
       <p className="w-20">{text}</p>
       {text2 && (
-        <div className=" border-l-black border-l-2 w-[50%] pl-3 flex items-center text-right">
+        <div className=" border-l-black border-l-2 w-[50%] pl-4 flex items-center text-right">
           <MdOutlineContentCopy className="w-4 group-hover:text-primary" />
           <p className=" flex text-right group-hover:text-primary">{text2}</p>
         </div>

@@ -4,8 +4,8 @@ import CardHowPc from "../components/CardHowPc";
 import { carousel, carouselpc } from "../constants";
 const Goal = () => {
   return (
-    <section className="flex flex-col items-center md:px-20  py-20">
-      <h1 className="font-bold text-primary text-[50px] text-center font-Aljazeera">
+    <section className="flex flex-col max-md:items-center md:imtes-end md:px-20  py-20">
+      <h1 className="font-bold text-primary text-[50px] text-center md:text-right md:mr-10 flex-end font-Aljazeera">
         كيف تشارك ؟
       </h1>
       <div className="mt-5 w-full md:hidden  carousel carousel-center max-sm:max-w-md py-8 px-10 space-x-10  rounded-box">
