@@ -28,7 +28,7 @@ export const validateFormInputs = (formData) => {
 
   return errors;
 };
-export const sendDEmail = (formData, sending, setSending) => {
+export const sendDEmail = (formData, sending, setSending, setData) => {
   const validationErrors = validateFormInputs(formData);
 
   if (Object.keys(validationErrors).length === 0) {
@@ -46,6 +46,12 @@ export const sendDEmail = (formData, sending, setSending) => {
           console.log("SUCCESS!");
           toast.success("email sent");
           setSending(false);
+          setData({
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+          });
         },
         (error) => {
           setSending(false);

@@ -11,6 +11,17 @@ import {
   goalpc1,
   goalpc2,
   goalpc3,
+  phonePc,
+  emailPc,
+  socialPc,
+  cTikDark,
+  cTikLight,
+  cFaceDark,
+  cFaceLight,
+  cInstDark,
+  cInstLight,
+  cYouDark,
+  cYouLight,
 } from "../assets";
 
 export const navLinks = [
@@ -40,10 +51,30 @@ export const footerLinks2 = [
 ];
 
 export const socialMedia = [
-  { icon: instagram, link: "instagram", text: "إنستغرام" },
-  { icon: facebook, link: "facebook", text: "فيسبوك" },
-  { icon: tiktok, link: "tiktok", text: "تيكتوك" },
-  { icon: youtube, link: "youtube", text: "يوتيوب" },
+  {
+    iconLight: cInstLight,
+    iconDark: cInstDark,
+    link: "instagram",
+    text: "إنستغرام",
+  },
+  {
+    iconLight: cFaceLight,
+    iconDark: cFaceDark,
+    link: "facebook",
+    text: "فيسبوك",
+  },
+  {
+    iconLight: cTikLight,
+    iconDark: cTikDark,
+    link: "tiktok",
+    text: "تيكتوك",
+  },
+  {
+    iconLight: cYouLight,
+    iconDark: cYouDark,
+    link: "youtube",
+    text: "يوتيوب",
+  },
 ];
 
 export const carousel = [
@@ -78,5 +109,23 @@ export const carouselpc = [
     image: goalpc3,
     title: "المساهمة بطريقة اخرى",
     text: "سواء بالدعم المالي , اللوجيستي , شبكة العلاقات والمعارف , الشهرة , شراكات مع المجتمع , … الخ",
+  },
+];
+export const contactInfo = [
+  {
+    img: phonePc,
+    info: "0780502844 / 0794515934",
+    title: "الهاتف",
+  },
+  {
+    img: emailPc,
+    info: "Nosra07@gmail.com",
+    title: "الإيمايل",
+  },
+  {
+    img: socialPc,
+
+    social: socialMedia,
+    title: "مواقع التواصل",
   },
 ];

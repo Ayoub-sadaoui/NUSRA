@@ -1,5 +1,5 @@
 import HomePage from "./HomePage";
-import About from "./About";
+import Contact from "./Contact";
 import HomeLayout from "./HomeLayout";
 
-export { HomeLayout, HomePage, About };
+export { HomeLayout, HomePage, Contact };

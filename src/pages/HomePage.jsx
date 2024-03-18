@@ -1,5 +1,5 @@
 import { ToastContainer } from "react-toastify";
-import { Hero, AboutUs, Goal, Contact, Footer } from "../sections";
+import { Hero, AboutUs, Goal, Footer } from "../sections";
 import Why from "../sections/Why";
 import GoalPhone from "../sections/GoalPhone";
 

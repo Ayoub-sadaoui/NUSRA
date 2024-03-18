@@ -1,9 +1,8 @@
 import { Button } from "react-daisyui";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { HomePage, About, HomeLayout } from "./pages";
+import { HomePage, Contact, HomeLayout } from "./pages";
 
 import React, { useContext } from "react";
-import { Contact } from "./sections";
 
 const router = createBrowserRouter([
   {
@@ -13,10 +12,6 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
-      },
-      {
-        path: "about",
-        element: <About />,
       },
       {
         path: "contact",
