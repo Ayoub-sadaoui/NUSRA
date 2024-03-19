@@ -33,7 +33,7 @@ const Form = () => {
       <textarea
         className="textarea textarea-bordered min-h-[100px] text-right sm:border-x-0 sm:border-t-0  xs:shadow-none sm:rounded-none w-full   sm:border-b-[1px] sm:border-b-secondary"
         placeholder="الرسالة"
-        value={data.name}
+        // value={data.name}
         name="message"
         onChange={handleTextArea}
       ></textarea>
