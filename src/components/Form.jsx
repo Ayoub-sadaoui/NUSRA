@@ -37,14 +37,14 @@ const Form = () => {
         name="message"
         onChange={handleTextArea}
       ></textarea>
-      <button className="btn lg:hidden btn-primary text-white hover:text-white">
+      <button className="btn lg:hidden btn-primary text-white mt-10 hover:text-white">
         {sending ? (
           <span className="loading loading-dots loading-sm"></span>
         ) : (
           "ارسال"
         )}
       </button>
-      <button className="btn hidden lg:block px-8 btn-primary btn-outline hover:text-white w-fit self-end ">
+      <button className="btn max-lg:hidden lg:block px-8 btn-primary btn-outline mt-10 hover:text-white w-fit self-end ">
         {sending ? (
           <span className="loading loading-dots loading-sm"></span>
         ) : (

@@ -10,6 +10,9 @@
     @apply bg-black;
   }
 }
+body {
+  font-family: Aljazeera;
+}
 
 /* @font-face {
   font-family: "Aljazeera";

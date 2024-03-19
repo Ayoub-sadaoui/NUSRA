@@ -51,7 +51,7 @@ const Header = () => {
               </button>
             </a>
 
-            <a href="#contact">
+            <a href="contact">
               <button className="px-4 active:scale-95 active:delay-0 hover:delay-200 group relative  overflow-hidden hover:duration-100 rounded-xl border-[2.5px]  hover:text-white  border-primary text-primary font-[400] font-Aljazeera text-2xl lg:text-3xl">
                 تواصل معنا
                 <span className=" w-[200px] h-[200px]  group-hover:-translate-x-[80%] translate-x-[180%] transition-all duration-[500ms] translate-y-1/2  group-hover:translate-y-[-20%] bg-primary absolute rounded-full -z-10 "></span>

@@ -10,9 +10,9 @@ const InfoContainer = ({ img, info, title, social }) => {
         {info && <p className="text-2xl font-light">{info}</p>}
         {social && (
           <div className="grid grid-cols-2 gap-8">
-            {social.map((item) => {
+            {social.map((item, index) => {
               return (
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center" key={index}>
                   <img
                     src={theme === "myLight" ? item.iconLight : item.iconDark}
                     alt={item.text}

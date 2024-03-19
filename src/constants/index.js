@@ -11,12 +11,27 @@ import {
   goalpc1,
   goalpc2,
   goalpc3,
+  emailPc,
+  socialPc,
+  instapic,
+  facebookpic,
+  tiktokpic,
+  youtubepic,
+  phonePc,
+  cTikDark,
+  cTikLight,
+  cFaceDark,
+  cFaceLight,
+  cInstDark,
+  cInstLight,
+  cYouDark,
+  cYouLight,
 } from "../assets";
 
 export const navLinks = [
   { href: "#home", label: "التسجيل" },
   { href: "#about-us", label: "معلومات عنا" },
-  { href: "#products", label: "هدفنا" },
+  { href: "#goal", label: "هدفنا" },
   { href: "#contact-us", label: "كيف تشارك ؟" },
 ];
 
@@ -24,7 +39,7 @@ export const footerLinks = [
   { href: "#home", label: "التسجيل" },
   { href: "#about-us", label: "معلومات عنا" },
   { href: "#products", label: "هدفنا" },
-  { href: "#contact-us", label: "التواصل معنا" },
+  { href: "contact", label: "التواصل معنا" },
   { href: "#contact-us", label: "ارسال رسالة" },
   { href: "#contact-us", label: "تابعونا" },
 ];
@@ -35,17 +50,44 @@ export const footerLinks2 = [
   },
   { href: "#why", label: " لماذا نصرة؟" },
   { href: "#how", label: "كيف تشارك" },
-  { href: "#contact-us", label: "أين تجدنا؟" },
+  { href: "#where", label: "أين تجدنا؟" },
   { href: "#contact-us", label: "  " },
 ];
 
 export const socialMedia = [
-  { icon: instagram, link: "instagram", text: "إنستغرام" },
-  { icon: facebook, link: "facebook", text: "فيسبوك" },
-  { icon: tiktok, link: "tiktok", text: "تيكتوك" },
-  { icon: youtube, link: "youtube", text: "يوتيوب" },
+  {
+    iconLight: cInstLight,
+    iconDark: cInstDark,
+    icon: instagram,
+    link: "instagram",
+    text: "إنستغرام",
+    image: instapic,
+  },
+  {
+    iconLight: cFaceLight,
+    iconDark: cFaceDark,
+    icon: facebook,
+    link: "facebook",
+    text: "فيسبوك",
+    image: facebookpic,
+  },
+  {
+    iconLight: cTikLight,
+    iconDark: cTikDark,
+    icon: tiktok,
+    link: "tiktok",
+    text: "تيكتوك",
+    image: tiktokpic,
+  },
+  {
+    iconLight: cYouLight,
+    iconDark: cYouDark,
+    icon: youtube,
+    link: "youtube",
+    text: "يوتيوب",
+    image: youtubepic,
+  },
 ];
-
 export const carousel = [
   {
     image: goal1,

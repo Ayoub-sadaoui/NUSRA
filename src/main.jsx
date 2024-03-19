@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import { ContextProvider } from "./components/Context.jsx";
 import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <ContextProvider>
