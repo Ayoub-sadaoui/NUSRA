@@ -21,6 +21,20 @@ import instapic from "./instapic.png";
 import facebookpic from "./facebookpic.png";
 import youtubepic from "./youtubepic.png";
 import tiktokpic from "./tiktokpic.png";
+
+import phone from "./phone.png";
+import phonePc from "./phone-pc.svg";
+import emailPc from "./emialPc.svg";
+import socialPc from "./social.svg";
+import cYouDark from "./c-you-dark.svg";
+import cYouLight from "./c-you-light.svg";
+import cFaceDark from "./c-face-dark.svg";
+import cFaceLight from "./c-face-light.svg";
+import cInstDark from "./c-inst-dark.svg";
+import cInstLight from "./c-inst-light.svg";
+import cTikDark from "./c-tik-dark.svg";
+import cTikLight from "./c-tik-light.svg";
+
 export {
   logo,
   arabic,
@@ -45,4 +59,16 @@ export {
   facebookpic,
   youtubepic,
   tiktokpic,
+  phone,
+  phonePc,
+  emailPc,
+  socialPc,
+  cTikDark,
+  cTikLight,
+  cFaceDark,
+  cFaceLight,
+  cInstDark,
+  cInstLight,
+  cYouDark,
+  cYouLight,
 };
