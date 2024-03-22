@@ -19,13 +19,12 @@ const HomePage = () => {
         <section className="max-sm:mt-10 max-md:mt-20 ">
           <GoalPhone />
         </section>
-        <section className="max-sm:mt-10 md:mt-20 " id="how">
+        <section className="max-sm:mt-10 md:mt-16 " id="how">
           <Goal />
         </section>
         <section>
           <Where />
         </section>
-
         <section>
           <Footer />
         </section>

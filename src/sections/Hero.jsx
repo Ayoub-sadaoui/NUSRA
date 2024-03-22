@@ -28,7 +28,7 @@ const Hero = () => {
           نوجد لك طريق
           <span className="text-primary"> المساعدة </span>
         </h1>
-        <p className="max-sm:hidden max-md:text-white text-secondary text-center md:text-right font-Aljazeera text-xl lg:text-3xl mt-4 ">
+        <p className="max-sm:hidden max-md:text-white text-secondary text-center md:text-right font-Aljazeera text-xl lg:text-3xl mt-4 pl-24">
           نصرة عبارة عن مجتمع الكتروني متكون من كل من لديهم هدف نصرة القضية
           الفلسطينية من اجل ايجاد طرق المساهمة في الدعم على حسب مهارات و قدرات
           كل فرد

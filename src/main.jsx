@@ -9,6 +9,6 @@ import { ToastContainer } from "react-toastify";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <ContextProvider>
     <App />
-    <ToastContainer />
+    <ToastContainer position="top-center" />
   </ContextProvider>
 );
