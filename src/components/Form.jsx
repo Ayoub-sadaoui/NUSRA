@@ -12,7 +12,6 @@ const Form = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("submited");
     sendDEmail(data, sending, setSending, setData);
   };
   return (

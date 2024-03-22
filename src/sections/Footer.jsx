@@ -107,7 +107,7 @@ const Footer = () => {
             تواصل معنا
           </h2>
           <div className="mt-10">
-            <div className="flex gap-2">
+            <div className="flex gap-10">
               <FooterButton text="تواصل معنا" />
               <FooterButton text="إتصل بنا" />
             </div>
@@ -119,5 +119,5 @@ const Footer = () => {
     </footer>
   );
 };
-
+``;
 export default Footer;

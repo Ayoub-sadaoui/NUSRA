@@ -7,7 +7,6 @@ import ClosingIcon from "./ClosingIcon";
 
 const Sidebar = () => {
   const { closeSidebar, isSidebarOpen, theme } = useGlobalContext();
-  console.log(theme);
   return (
     <section className=" h-screen bg-base-100 absolute top-0 left-0 w-full z-20 py-20">
       <button className="text-2xl " onClick={closeSidebar}>

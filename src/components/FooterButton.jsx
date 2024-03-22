@@ -8,7 +8,7 @@ const FooterButton = ({ text, text2 }) => {
     if (text2) {
       try {
         navigator.clipboard.writeText(text);
-        toast.success(` "${text}"2 coppied`);
+        toast.success(` "${text}" coppied`);
       } catch (err) {
         console.error(err);
       }
@@ -21,14 +21,14 @@ const FooterButton = ({ text, text2 }) => {
       text-secondary bg-neutral group relative  text-xl rounded-lg
        px-10 py-2 font-Aljazeera flex justify-between mt-5 w-full`}
     >
-      <p className="w-20">{text}</p>
+      <p className="w- whitespace-nowrap">{text}</p>
       {text2 && (
-        <div className=" border-l-secondary border-l-2 w-[50%] pl-4 flex items-center text-right">
-          <MdOutlineContentCopy className="w-4 group-hover:text-primary" />
+        <div className=" border-l-secondary border-l-2 w-[50%] pl-8  flex items-center justify-center text-right">
+          <MdOutlineContentCopy className="w-4 text-xl group-hover:text-primary" />
           <p className=" flex text-right group-hover:text-primary">{text2}</p>
         </div>
       )}
-      <div className="absolute top-0 left-0 w-full h-full">
+      <div className="absolute top-0 left-0  w-full h-full">
         <svg
           width="300"
           height="130"

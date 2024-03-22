@@ -1,7 +1,6 @@
 import React from "react";
 
 const FooterLinks = ({ text, icon }) => {
-  console.log(icon);
   return (
     <div className="group flex justify-between items-center gap-4 relative">
       <p className="font-Aljazeera lg:text-2xl text-xl text-center font-thin">
