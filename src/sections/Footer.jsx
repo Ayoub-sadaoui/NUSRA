@@ -104,13 +104,14 @@ const Footer = () => {
         </div>
         <div className="px-5 hidden lg:hidden w-[376px]">
           <h2 className="lg:text-[45px] text-3xl font-Aljazeera text-center text-neutral">
-            تواصل معنا
+            تواصمنتمل معنا
           </h2>
           <div className="mt-10">
             <div className="flex gap-10">
               <FooterButton text="تواصل معنا" />
               <FooterButton text="إتصل بنا" />
             </div>
+            <div>helllo </div>
             <FooterButton text="0780502844" text2="إنسخ الرقم" />
             <FooterButton text="nusra.online" text2="إنسخ الإيميل" />
           </div>
