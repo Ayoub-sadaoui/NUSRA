@@ -25,7 +25,7 @@ const Hero = () => {
       <div className=" sm:max-lg:mb-10 md:mt-10 max-sm:absolute  sm:relative z-10 flex items-center md:items-end flex-col   max-sm:mt-[100px]  md:w-[50%] max-md:px-10  ">
         <Title />
         <h1 className="sm:text-[60px] text-secondary lg:text-[70px] xl:text-[96px] leading-[100%]  font-normal  text-center md:text-right max-md:hidden  font-Aljazeera">
-          نوجد لك طريقينبتشكت
+          نوجد لك طريق
           <span className="text-primary"> المساعدة </span>
         </h1>
         <p className="max-sm:hidden max-md:text-white text-secondary text-center md:text-right font-Aljazeera text-xl lg:text-3xl mt-4 pl-24">
