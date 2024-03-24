@@ -43,7 +43,7 @@ const Form = () => {
           "ارسال"
         )}
       </button>
-      <button className="btn max-lg:hidden lg:block px-8 btn-primary btn-outline mt-10 hover:text-white w-fit self-end ">
+      <button className="btn  max-lg:hidden lg:block px-8  btn-outline hover:outline-none mt-10 text-primary text-2xl  hover:text-white hover:bg-primary w-fit self-end ">
         {sending ? (
           <span className="loading loading-dots loading-sm"></span>
         ) : (

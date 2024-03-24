@@ -1,5 +1,5 @@
 import { footerLinks, footerLinks2, socialMedia } from "../constants";
-import { copyicon, orangeLogo } from "../assets";
+import { orangeLogo } from "../assets";
 import FooterLinks from "../components/FooterLinks";
 import FooterButton from "../components/FooterButton";
 import { useGlobalContext } from "../components/Context";
@@ -104,20 +104,19 @@ const Footer = () => {
         </div>
         <div className="px-5 hidden lg:hidden w-[376px]">
           <h2 className="lg:text-[45px] text-3xl font-Aljazeera text-center text-neutral">
-            تواصل معنا
+            تواصل jkljمعنا
           </h2>
-          <div className="mt-10">
-            <div className="flex gap-10">
+          <div className="mt-12">
+            <div className="flex gap-80">
               <FooterButton text="تواصل معنا" />
               <FooterButton text="إتصل بنا" />
             </div>
             <FooterButton text="0780502844" text2="إنسخ الرقم" />
-            <FooterButton text="nusra.online" text2="إنسخ الإيميل" />
+            <FooterButton text="contact@nosra.online" text2="إنسخ الإيميل" />
           </div>
         </div>
       </div>
     </footer>
   );
 };
-``;
 export default Footer;
