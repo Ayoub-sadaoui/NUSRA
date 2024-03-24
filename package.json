@@ -12,6 +12,10 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "overrides": {
+    "vite": {
+      "rollup": "npm:@rollup/wasm-node"
+    },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "firebase": "^10.9.0",
