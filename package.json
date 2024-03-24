@@ -15,7 +15,7 @@
   "overrides": {
     "vite": {
       "rollup": "npm:@rollup/wasm-node"
-    },
+    }},
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "firebase": "^10.9.0",
