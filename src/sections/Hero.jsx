@@ -24,7 +24,7 @@ const Hero = () => {
       <a href="contact">
         <button
           className=" sm:hidden bg-white border-primary border-[3px] rounded-full py-2 px-4
-      font-bold text-xl text-primary fixed bottom-20  right-5 z-50 shadow-2xl
+      font-bold text-sm text-primary fixed bottom-20  right-5 z-50 shadow-2xl
       hover:bg-primary hover:text-white"
         >
           تواصل معنا

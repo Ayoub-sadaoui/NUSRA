@@ -17,11 +17,10 @@ const Sidebar = () => {
           {navLinks.map((navLink, index) => {
             return (
               <li
-                onClick={closeSidebar}
                 key={index}
                 className="border-b-2 border-0 border-solid py-4 px-4 border-b-gray-300 "
               >
-                <a href={navLink.href} className=" ">
+                <a href={navLink.href} className=" " onClick={closeSidebar}>
                   <p className="text-right text-xl text-secondery ">
                     {navLink.label}
                   </p>

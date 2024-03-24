@@ -36,21 +36,21 @@ export const navLinks = [
 ];
 
 export const footerLinks = [
-  { href: "#hero", label: "التسجيل" },
-  { href: "#AboutUs", label: "معلومات عنا" },
-  { href: "#goalPhone", label: "هدفنا" },
-  { href: "contact", label: "التواصل معنا" },
-  { href: "#contact-us", label: "ارسال رسالة" },
+  { href: "/#hero", label: "التسجيل" },
+  { href: "/#AboutUs", label: "معلومات عنا" },
+  { href: "/#goalPhone", label: "هدفنا" },
+  { href: "/contact", label: "التواصل معنا" },
+  { href: "/contact", label: "ارسال رسالة" },
 ];
 export const footerLinks2 = [
   {
     href: "#hero",
     label: "التسجيل",
   },
-  { href: "#why", label: " لماذا نصرة؟" },
-  { href: "#how", label: "كيف تشارك" },
-  { href: "#where", label: "أين تجدنا؟" },
-  { href: "#contact-us", label: "  " },
+  { href: "/#why", label: " لماذا نصرة؟" },
+  { href: "/#how", label: "كيف تشارك" },
+  { href: "/#where", label: "أين تجدنا؟" },
+  { href: "/#contact-us", label: "  " },
 ];
 
 export const socialMedia = [

@@ -13,7 +13,7 @@ const HomePage = () => {
         <section id="why">
           <Why />
         </section>
-        <section className="max-sm:mt-[700px] max-md:mt-40">
+        <section className="max-sm:mt-[700px] max-md:mt-40" id="AboutUs">
           <AboutUs />
         </section>
         <section className="max-sm:mt-10 max-md:mt-20 " id="goalPhone">
