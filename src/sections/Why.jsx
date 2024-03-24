@@ -20,7 +20,7 @@ const Why = () => {
         </p>
 
         <div className="grid justify-center group  mt-20">
-          <a href={flyerUrl} target="_blank" download="flyer.pdf">
+          <a target="_blank" href={flyerUrl} download="flyer.pdf">
             <button className="lg:px-5 sm:px-3 active:delay-0 hover:delay-200 relative btn2 overflow-hidden sm:text-xl active:scale-95  duration-100  hover:text-white  py-2  flex  items-center justify-center  rounded-lg border-[3px]    border-primary  text-primary  font-Aljazeera lg:text-3xl">
               <svg
                 className="mr-2"

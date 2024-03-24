@@ -6,7 +6,7 @@ import ThemTogglingpc from "../components/ThemTogglingpc";
 import MyThemToggle from "../components/MyThemToggle";
 const Header = () => {
   const { openSidebar, isSidebarOpen, theme } = useGlobalContext();
-
+  const currentUrl = window.location.href;
   const flyerUrl =
     "https://drive.google.com/file/d/1JSPz_Jyenk2AiiXYJ6XeooQ--weObpls/view";
   return (
@@ -32,7 +32,7 @@ const Header = () => {
           </div>
           <div className="max-md:hidden  sm:flex sm:items-center gap-3 md:gap-5 ">
             <MyThemToggle />
-            <a href={flyerUrl} download="flyer.pdf">
+            <a target="_blank" href={flyerUrl} download="flyer.pdf">
               <button className="px-4 group relative hover:delay-200 active:delay-0 overflow-hidden active:scale-95 active:duration-100  flex items-center gap-1 ml-5 lg:ml-10 rounded-xl border-[2.5px]  hover:text-white border-primary text-primary font-[400] font-Aljazeera text-2xl lg:text-3xl">
                 <svg
                   width="25"
@@ -51,19 +51,28 @@ const Header = () => {
               </button>
             </a>
 
-            <a href="contact">
-              <button className="px-4 active:scale-95 active:delay-0 hover:delay-200 group relative  overflow-hidden hover:duration-100 rounded-xl border-[2.5px]  hover:text-white  border-primary text-primary font-[400] font-Aljazeera text-2xl lg:text-3xl">
-                تواصل معنا
-                <span className=" w-[200px] h-[200px]  group-hover:-translate-x-[80%] translate-x-[180%] transition-all duration-[500ms] translate-y-1/2  group-hover:translate-y-[-20%] bg-primary absolute rounded-full -z-10 "></span>
-              </button>
-            </a>
+            {!currentUrl.includes("contact") ? (
+              <a href="contact">
+                <button className="px-4 active:scale-95 active:delay-0 hover:delay-200 group relative  overflow-hidden hover:duration-100 rounded-xl border-[2.5px]  hover:text-white  border-primary text-primary font-[400] font-Aljazeera text-2xl lg:text-3xl">
+                  تواصل معنا
+                  <span className=" w-[200px] h-[200px]  group-hover:-translate-x-[80%] translate-x-[180%] transition-all duration-[500ms] translate-y-1/2  group-hover:translate-y-[-20%] bg-primary absolute rounded-full -z-10 "></span>
+                </button>
+              </a>
+            ) : (
+              <a href="/">
+                <button className="px-4 active:scale-95 active:delay-0 hover:delay-200 group relative  overflow-hidden hover:duration-100 rounded-xl border-[2.5px]  hover:text-white  border-primary text-primary font-[400] font-Aljazeera text-2xl lg:text-3xl">
+                  التسجيل
+                  <span className=" w-[200px] h-[200px]  group-hover:-translate-x-[80%] translate-x-[180%] transition-all duration-[500ms] translate-y-1/2  group-hover:translate-y-[-20%] bg-primary absolute rounded-full -z-10 "></span>
+                </button>
+              </a>
+            )}
           </div>
           {/* <img
             src={arabiclang ? arabic : logo}
             alt="langToggle"
             className="w-[80px]"
           /> */}
-          <div onClick={openSidebar} className="flex gap-4 py-1">
+          <div className="flex gap-4 py-1">
             <a href="/">
               <img
                 src={logo}

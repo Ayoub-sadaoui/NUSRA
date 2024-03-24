@@ -4,7 +4,10 @@ import Title from "../components/Title";
 
 const Hero = () => {
   return (
-    <div className="flex max-md:flex-col	relative items-center  sm:mt-24  lg:mt-40 xl:mt-20    md:flex-row  px-20 ">
+    <div
+      id="hero"
+      className="flex max-md:flex-col	relative items-center  sm:mt-24  lg:mt-40 xl:mt-20    md:flex-row  px-20 "
+    >
       <div className="absolute  top-0 left-0 w-full   sm:w-[50%] sm:relative sm:mt-5">
         <img src={background} alt="background" className="w-full xs:hidden " />
         <img src={background2} alt="background2" className="max-md:hidden " />
@@ -18,11 +21,17 @@ const Hero = () => {
         />
       </div>
 
-      <button className=" sm:hidden bg-white font-bold border-primary border-[3px] rounded-full py-2 px-4 text-primary absolute top-[100px] left-3">
-        تواصل معنا
-      </button>
+      <a href="contact">
+        <button
+          className=" sm:hidden bg-white border-primary border-[3px] rounded-full py-2 px-4
+      font-bold text-xl text-primary fixed bottom-20  right-5 z-50 shadow-2xl
+      hover:bg-primary hover:text-white"
+        >
+          تواصل معنا
+        </button>
+      </a>
 
-      <div className=" sm:max-lg:mb-10 md:mt-10 max-sm:absolute  sm:relative z-10 flex items-center md:items-end flex-col   max-sm:mt-[100px]  md:w-[50%] max-md:px-10  ">
+      <div className=" sm:max-lg:mb-10 md:mt-10 max-sm:absolute  sm:relative z-10 flex items-center md:items-end flex-col   max-sm:mt-[90px]  md:w-[50%] max-md:px-10  ">
         <Title />
         <h1 className="sm:text-[60px] text-secondary lg:text-[70px] xl:text-[96px] leading-[100%]  font-normal  text-center md:text-right max-md:hidden  font-Aljazeera">
           نوجد لك طريق
@@ -39,7 +48,10 @@ const Hero = () => {
         </p>
 
         <div className="grid justify-center max-md:items-center  gap-2 mt-8">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWK_KXrB1bNITfYQ06ZB-UoTAyR3gxe35XRmg-zPZzQt0hDQ/viewform">
+          <a
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfWK_KXrB1bNITfYQ06ZB-UoTAyR3gxe35XRmg-zPZzQt0hDQ/viewform"
+          >
             <button
               className="lg:px-10 lg:py-4  px-6 py-2 rounded-xl font-[400] font-Aljazeera text-2xl lg:text-[42px]
              active:scale-95  active:duration-100   
@@ -48,9 +60,12 @@ const Hero = () => {
               إضغط للتسجيل
             </button>
           </a>
-          <a href="https://drive.google.com/file/d/1JSPz_Jyenk2AiiXYJ6XeooQ--weObpls/view">
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/d/1JSPz_Jyenk2AiiXYJ6XeooQ--weObpls/view"
+          >
             <button
-              className="px-4 py-2
+              className="px-4 py-2 w-full
          active:delay-0 hover:delay-200 relative btn2 overflow-hidden group
           flex  items-center justify-center  rounded-lg border-[3px] hover:text-primary
              border-white text-white  font-Aljazeera sm:hidden text-xl"

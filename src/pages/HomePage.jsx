@@ -16,13 +16,13 @@ const HomePage = () => {
         <section className="max-sm:mt-[700px] max-md:mt-40">
           <AboutUs />
         </section>
-        <section className="max-sm:mt-10 max-md:mt-20 ">
+        <section className="max-sm:mt-10 max-md:mt-20 " id="goalPhone">
           <GoalPhone />
         </section>
-        <section className="max-sm:mt-10 md:mt-16 " id="how">
+        <section className="max-sm:mt-10  md:mt-16 " id="how">
           <Goal />
         </section>
-        <section>
+        <section className="max-md:hidden">
           <Where />
         </section>
         <section>

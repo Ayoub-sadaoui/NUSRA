@@ -15,21 +15,27 @@ const Footer = () => {
         <div>
           <img src={orangeLogo} className="h-[90px]" />
         </div>
-        <ul>
+        <ul className="mt-7">
           {footerLinks.map((link, index) => {
             return (
-              <li key={index} className="text-neutral text-center mt-2">
+              <li
+                key={index}
+                className="text-neutral text-[20px] text-center mt-2"
+              >
                 <a href={link.href}>{link.label}</a>
               </li>
             );
           })}
         </ul>
+        <h1 className="text-neutral text-2xl text-center mt-7 tracking-wider ">
+          : تابعونا
+        </h1>
         <ul className="flex justify-center items-center gap-3 mt-4">
           {socialMedia.map((social, index) => {
             return (
               <li key={index} className="text-neutral text-center mt-2">
-                <a href={social.link}>
-                  <img src={social.icon} className="w-6" />
+                <a target="_blank" href={social.link}>
+                  <img src={social.icon} className="w-7" />
                 </a>
               </li>
             );
@@ -41,7 +47,10 @@ const Footer = () => {
         <div className="w-full  flex flex-wrap gap-y-20 flex-row-reverse justify-between items-start  px-5 max-sm:hidden">
           <div className="flex flex-col  gap-10 items-center border-l-primary border-l-4 pl-10">
             <img src={orangeLogo} alt="" />
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWK_KXrB1bNITfYQ06ZB-UoTAyR3gxe35XRmg-zPZzQt0hDQ/viewform">
+            <a
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfWK_KXrB1bNITfYQ06ZB-UoTAyR3gxe35XRmg-zPZzQt0hDQ/viewform"
+            >
               <button className="border-4 active:scale-95 duration-100 w-fit border-primary font-Aljazeera text-primary hover:text-neutral hover:border-neutral px-8 py-1 rounded-2xl lg:text-[40px] text-3xl ">
                 التسجيل
               </button>
@@ -55,7 +64,7 @@ const Footer = () => {
               {socialMedia.map((social, index) => {
                 return (
                   <li key={index} className="text-neutral  text-right mt-2">
-                    <a href={social.link}>
+                    <a target="_blank" href={social.link}>
                       <FooterLinks
                         text={social.text}
                         icon={
@@ -91,28 +100,15 @@ const Footer = () => {
               تواصل معنا
             </h2>
             <div className="mt-10">
-              <div className="flex gap-2">
-                <a href="contact">
+              <div className="flex gap-20">
+                <a target="_blank" href="contact">
                   <FooterButton text="تواصل معنا" />
                 </a>
                 <FooterButton text="إتصل بنا" />
               </div>
               <FooterButton text="0780502844" text2="إنسخ الرقم" />
-              <FooterButton text="nusra.online" text2="إنسخ الإيميل" />
+              <FooterButton text3="contact@nosra.online" text2="إنسخ الإيميل" />
             </div>
-          </div>
-        </div>
-        <div className="px-5 hidden lg:hidden w-[376px]">
-          <h2 className="lg:text-[45px] text-3xl font-Aljazeera text-center text-neutral">
-            تواصل jkljمعنا
-          </h2>
-          <div className="mt-12">
-            <div className="flex gap-80">
-              <FooterButton text="تواصل معنا" />
-              <FooterButton text="إتصل بنا" />
-            </div>
-            <FooterButton text="0780502844" text2="إنسخ الرقم" />
-            <FooterButton text="contact@nosra.online" text2="إنسخ الإيميل" />
           </div>
         </div>
       </div>

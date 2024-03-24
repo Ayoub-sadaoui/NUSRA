@@ -29,23 +29,22 @@ import {
 } from "../assets";
 
 export const navLinks = [
-  { href: "#home", label: "التسجيل" },
-  { href: "#about-us", label: "معلومات عنا" },
-  { href: "#goal", label: "هدفنا" },
-  { href: "#contact-us", label: "كيف تشارك ؟" },
+  { href: "/#hero", label: "التسجيل" },
+  { href: "/#AboutUs", label: "معلومات عنا" },
+  { href: "/#goalPhone", label: "هدفنا" },
+  { href: "/#how", label: "كيف تشارك ؟" },
 ];
 
 export const footerLinks = [
-  { href: "#home", label: "التسجيل" },
-  { href: "#about-us", label: "معلومات عنا" },
-  { href: "#products", label: "هدفنا" },
+  { href: "#hero", label: "التسجيل" },
+  { href: "#AboutUs", label: "معلومات عنا" },
+  { href: "#goalPhone", label: "هدفنا" },
   { href: "contact", label: "التواصل معنا" },
   { href: "#contact-us", label: "ارسال رسالة" },
-  { href: "#contact-us", label: "تابعونا" },
 ];
 export const footerLinks2 = [
   {
-    href: "https://docs.google.com/forms/d/e/1FAIpQLSfWK_KXrB1bNITfYQ06ZB-UoTAyR3gxe35XRmg-zPZzQt0hDQ/viewform",
+    href: "#hero",
     label: "التسجيل",
   },
   { href: "#why", label: " لماذا نصرة؟" },
@@ -59,7 +58,7 @@ export const socialMedia = [
     iconLight: cInstLight,
     iconDark: cInstDark,
     icon: instagram,
-    link: "instagram",
+    link: "https://www.instagram.com/nosra.palestine/",
     text: "إنستغرام",
     image: instapic,
   },
@@ -67,7 +66,7 @@ export const socialMedia = [
     iconLight: cFaceLight,
     iconDark: cFaceDark,
     icon: facebook,
-    link: "facebook",
+    link: "https://www.facebook.com/profile.php?id=61557265543220",
     text: "فيسبوك",
     image: facebookpic,
   },

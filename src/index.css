@@ -20,7 +20,7 @@ body {
 } */
 
 #rect {
-  stroke-dasharray: 820;
+  stroke-dasharray: 880;
   stroke-dashoffset: 900;
   transition: 1s smooth;
 }
@@ -30,10 +30,10 @@ body {
 
 @keyframes animate {
   0% {
-    stroke-dashoffset: 820;
+    stroke-dashoffset: 900;
   }
   50% {
-    stroke-dashoffset: 410;
+    stroke-dashoffset: 450;
   }
   100% {
     stroke-dashoffset: 0;

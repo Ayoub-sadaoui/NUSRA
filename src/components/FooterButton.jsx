@@ -2,13 +2,13 @@ import { MdOutlineContentCopy } from "react-icons/md";
 import { useGlobalContext } from "../components/Context";
 import { toast } from "react-toastify";
 
-const FooterButton = ({ text, text2 }) => {
+const FooterButton = ({ text, text2, text3 }) => {
   const { theme } = useGlobalContext();
   const copy = (text) => {
     if (text2) {
       try {
         navigator.clipboard.writeText(text);
-        toast.success(` "${text}" coppied`);
+        toast.success(` "${text3 ? text3 : text}" coppied`);
       } catch (err) {
         console.error(err);
       }
@@ -19,16 +19,22 @@ const FooterButton = ({ text, text2 }) => {
       onClick={() => copy(text)}
       className={`
       text-secondary bg-neutral group relative  text-xl rounded-lg
-       px-10 py-2 font-Aljazeera flex justify-between mt-5 w-full`}
+       px-8 py-2 font-Aljazeera flex justify-between mt-5 w-full`}
     >
-      <p className="w-20 ">{text}</p>
-      {text2 && (
-        <div className=" border-l-secondary border-l-2 w-[50%] pl-8  flex items-center justify-center text-right">
-          <MdOutlineContentCopy className="w-4 text-xl group-hover:text-primary" />
-          <p className=" flex text-right group-hover:text-primary w-fit whitespace-nowrap">
-            {text2}
-          </p>
+      {text2 ? (
+        <div className="flex justify-between w-full ">
+          <div className="w-[2px] h-full bg-black absolute top-0 left-[50%] "></div>
+          {text3 && <p className="text-[15px] ">{text3}</p>}
+          <p className="">{text}</p>
+          <div className="   flex items-center justify-between w-[110px] text-right ">
+            <MdOutlineContentCopy className="w-4 text-xl group-hover:text-primary" />
+            <p className=" flex text-right group-hover:text-primary w-fit whitespace-nowrap">
+              {text2}
+            </p>
+          </div>
         </div>
+      ) : (
+        <p className={`w-20 text-center whitespace-nowrap`}>{text}</p>
       )}
       <div className="absolute top-0 left-0  w-full h-full">
         <svg

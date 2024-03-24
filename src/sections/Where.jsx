@@ -4,7 +4,7 @@ import { socialMedia } from "../constants";
 
 const Where = () => {
   return (
-    <div className="px-20 mt-16 pb-16 ">
+    <div id="where" className="px-20 mt-16 pb-16 ">
       <h1 className="font-bold text-secondary text-[80px] text-center md:text-right md:mr-10 flex-end font-Aljazeera">
         أين
         <span className="text-primary"> تجدنا؟</span>

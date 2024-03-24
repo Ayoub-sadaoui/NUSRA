@@ -5,7 +5,7 @@ import { carousel, carouselpc } from "../constants";
 const Goal = () => {
   return (
     <section className="flex flex-col max-md:items-center md:imtes-end md:px-20 ">
-      <h1 className="leading-tight  font-bold text-secondary text-[80px] text-center md:text-right md:mr-10 flex-end font-Aljazeera">
+      <h1 className="leading-tight  font-bold text-secondary text-[50px]  md:text-[80px] text-center md:text-right md:mr-10 flex-end font-Aljazeera">
         كيف
         <span className="text-primary "> تشارك؟</span>
       </h1>

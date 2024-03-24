@@ -17,6 +17,7 @@ const Sidebar = () => {
           {navLinks.map((navLink, index) => {
             return (
               <li
+                onClick={closeSidebar}
                 key={index}
                 className="border-b-2 border-0 border-solid py-4 px-4 border-b-gray-300 "
               >
