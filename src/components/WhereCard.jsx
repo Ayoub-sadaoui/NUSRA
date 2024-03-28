@@ -1,6 +1,6 @@
 import { FaRegShareFromSquare } from "react-icons/fa6";
 
-const WhereCard = ({ image, icon, title }) => {
+const WhereCard = ({ image, icon, title, link }) => {
   return (
     <div className=" group h-60 w-60 relative rounded-[33px] grid place-items-center overflow-hidden">
       <img

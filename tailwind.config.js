@@ -36,8 +36,11 @@ export default {
     extend: {
       fontFamily: {
         Aljazeera: ["Aljazeera", "sans-serif"],
+        Almarai: ["Almarai", "sans-serif"],
       },
-
+      dropShadow: {
+        "3xl": "0 35px 35px rgba(0, 0, 0, 0.95)",
+      },
       colors: {
         // Add your custom color here
         "bg-footer": "#F79122", // Adjust the color value as needed

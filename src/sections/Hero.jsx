@@ -1,6 +1,7 @@
 import React from "react";
 import { background, background2, background3 } from "../assets";
 import Title from "../components/Title";
+import { BsEnvelope } from "react-icons/bs";
 
 const Hero = () => {
   return (
@@ -21,13 +22,16 @@ const Hero = () => {
         />
       </div>
 
-      <a href="contact">
+      <a href="contact" className="relative ">
         <button
-          className=" sm:hidden bg-white border-primary border-[3px] rounded-full py-2 px-4
-      font-bold text-sm text-primary fixed bottom-20  right-5 z-50 shadow-2xl
-      hover:bg-primary hover:text-white"
+          className="group  hover:delay-200 active:delay-0  overflow-hidden active:scale-95 active:duration-100 
+          sm:hidden  border-primary border-[3px] rounded-full p-3 fixed bottom-20 left-5 z-30
+          font-bold hover:text-white bg-white text-[#8F8F8F] shadow-lg"
         >
-          تواصل معنا
+          <BsEnvelope className="text-2xl relative z-50" />
+
+          {/* تواصل معنا */}
+          <span className="sp w-40 h-40  group-hover:translate-x-[-70%] group-hover:translate-y-[-50%] z-50 group-hover:duration-[300ms] ease-out"></span>
         </button>
       </a>
 
@@ -55,7 +59,8 @@ const Hero = () => {
             <button
               className="lg:px-10 lg:py-4  px-6 py-2 rounded-xl font-[400] font-Aljazeera text-2xl lg:text-[42px]
              active:scale-95  active:duration-100   
-            bg-primary hover:bg-[#d08118] hover:shadow text-white  "
+            bg-primary hover:bg-[#d08118] hover:shadow text-white 
+            md:border-4 border-white "
             >
               إضغط للتسجيل
             </button>

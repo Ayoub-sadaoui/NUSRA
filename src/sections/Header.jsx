@@ -33,7 +33,10 @@ const Header = () => {
           <div className="max-md:hidden  sm:flex sm:items-center gap-3 md:gap-5 ">
             <MyThemToggle />
             <a target="_blank" href={flyerUrl} download="flyer.pdf">
-              <button className="px-4 group relative hover:delay-200 active:delay-0 overflow-hidden active:scale-95 active:duration-100  flex items-center gap-1 ml-5 lg:ml-10 rounded-xl border-[2.5px]  hover:text-white border-primary text-primary font-[400] font-Aljazeera text-2xl lg:text-3xl">
+              <button
+                className="px-4 group relative hover:delay-200 active:delay-0 overflow-hidden active:scale-95 active:duration-100
+                flex items-center gap-1 ml-5 lg:ml-10 rounded-xl border-[2.5px]  hover:text-white border-primary text-primary font-[400] font-Aljazeera text-2xl lg:text-3xl"
+              >
                 <svg
                   width="25"
                   height="18"
@@ -83,7 +86,7 @@ const Header = () => {
           </div>
         </nav>
       )}
-      <div className="w-full h-[1px] bg-secondary max-md:hidden "></div>
+      <div className="w-full h-[1.5px] bg-secondary max-md:hidden "></div>
     </header>
   );
 };

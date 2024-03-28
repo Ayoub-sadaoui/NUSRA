@@ -11,10 +11,12 @@ const Where = () => {
       </h1>
       <div className="flex flex-row-reverse flex-wrap gap-10 animation- justify-around bg-200 mt-8">
         {socialMedia.map((social, index) => {
-          const { image, text, icon, iconDark } = social;
+          const { image, text, link, iconDark } = social;
           return (
             <div key={index}>
-              <WhereCard image={image} icon={iconDark} title={text} />
+              <a href={link} target="_blank">
+                <WhereCard image={image} icon={iconDark} title={text} />
+              </a>
             </div>
           );
         })}
