@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="mt-20">
       <div
-        className={`w-full  bg-neutral-content   flex flex-col items-center py-8 sm:hidden `}
+        className={`w-full  bg-neutral-content   flex flex-col items-center py-8  sm:hidden `}
       >
         <div>
           <img src={orangeLogo} className="h-[90px]" />
@@ -35,7 +35,7 @@ const Footer = () => {
             return (
               <li key={index} className="text-neutral text-center mt-2">
                 <a target="_blank" href={social.link}>
-                  <img src={social.icon} className="w-7" />
+                  <img src={social.icon} className="w-10" />
                 </a>
               </li>
             );
@@ -43,8 +43,11 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="max-lg:px-14 bg-neutral-content  w-full flex flex-col max-sm:hidden items-center py-14">
-        <div className="w-full  flex flex-wrap gap-y-20 flex-row-reverse justify-between items-start  px-5 max-sm:hidden">
+      <div className="max-lg:px-14 bg-neutral-content  w-full flex flex-col max-sm:hidden items-center pt-10 pb-5 pr-4 pl-6">
+        <div
+          className="w-full  flex flex-wrap gap-y-20 flex-row-reverse 
+        justify-between items-start   max-sm:hidden"
+        >
           <div className="flex flex-col  gap-10 items-center border-l-primary border-l-4 pl-10">
             <img src={orangeLogo} alt="" />
             <a
@@ -56,11 +59,12 @@ const Footer = () => {
               </button>
             </a>
           </div>
-          <ul className="flex flex-col justify-center items-left gap-3 mt-4 px-10">
-            <h2 className="lg:text-[45px] text-3xl font-Aljazeera text-neutral text-center">
+
+          <ul className="flex flex-col justify-center items-left  px-10">
+            <h2 className="lg:text-[45px] text-3xl font-Aljazeera text-neutral text-right">
               تابعنا
             </h2>
-            <div className="mt-5 gap-3 flex flex-col">
+            <div className="mt-5 gap-1 flex flex-col">
               {socialMedia.map((social, index) => {
                 return (
                   <li key={index} className="text-neutral  text-right mt-2">
@@ -79,11 +83,12 @@ const Footer = () => {
               })}
             </div>
           </ul>
-          <ul className="flex flex-col justify-right items-center gap-3 mt-4 px-10">
-            <h2 className="lg:text-[45px] text-3xl font-Aljazeera text-neutral text-center">
+
+          <ul className="flex flex-col justify-right items-center   px-10">
+            <h2 className="lg:text-[45px] text-3xl font-Aljazeera text-neutral text-right">
               تصفح
             </h2>
-            <div className="mt-5 gap-3 flex flex-col items-end">
+            <div className="mt-5 gap-1 flex flex-col items-end">
               {footerLinks2.map((link, index) => {
                 return (
                   <li key={index} className="text-neutral  text-right mt-2 ">
@@ -95,11 +100,12 @@ const Footer = () => {
               })}
             </div>
           </ul>
+
           <div className="px-5 max-sm:hidden">
             <h2 className="lg:text-[45px] text-3xl font-Aljazeera text-center text-neutral">
               تواصل معنا
             </h2>
-            <div className="mt-10">
+            <div className="mt-3">
               <div className="flex gap-20">
                 <a target="_blank" href="contact">
                   <FooterButton text="تواصل معنا" />
@@ -107,7 +113,11 @@ const Footer = () => {
                 <FooterButton text="إتصل بنا" />
               </div>
               <FooterButton text="0780502844" text2="إنسخ الرقم" />
-              <FooterButton text3="contact@nosra.online" text2="إنسخ الإيميل" />
+              <FooterButton
+                text3="contact@nosra.
+              online"
+                text2="إنسخ الإيميل"
+              />
             </div>
           </div>
         </div>

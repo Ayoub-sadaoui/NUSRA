@@ -9,7 +9,6 @@ import emailjs from "@emailjs/browser";
 
 import { toast } from "react-toastify";
 export const validateFormInputs = (formData) => {
-  // Replace with your specific validation rules
   const errors = {};
 
   if (!formData.from_name || formData.from_name.trim() === "") {
@@ -46,6 +45,7 @@ export const sendDEmail = (formData, sending, setSending, setData) => {
           console.log("SUCCESS!");
           toast.success("email sent");
           setSending(false);
+
           setData({
             name: "",
             email: "",
@@ -62,7 +62,6 @@ export const sendDEmail = (formData, sending, setSending, setData) => {
       );
   } else {
     setSending(false);
-
     toast.error(
       validationErrors.name ||
         validationErrors.email ||

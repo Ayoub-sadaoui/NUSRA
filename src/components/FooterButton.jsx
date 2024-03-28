@@ -19,12 +19,14 @@ const FooterButton = ({ text, text2, text3 }) => {
       onClick={() => copy(text)}
       className={`
       text-secondary bg-neutral group relative  text-xl rounded-lg
-       px-8 py-2 font-Aljazeera flex justify-between mt-5 w-full`}
+       px-5 py-2 h-[43.8px]  font-Aljazeera flex justify-between mt-8 w-full`}
     >
       {text2 ? (
         <div className="flex justify-between w-full ">
           <div className="w-[2px] h-full bg-black absolute top-0 left-[50%] "></div>
-          {text3 && <p className="text-[15px] ">{text3}</p>}
+          {text3 && (
+            <p className="text-[16px] w-20 leading-4 font-[400] ">{text3}</p>
+          )}
           <p className="">{text}</p>
           <div className="   flex items-center justify-between w-[110px] text-right ">
             <MdOutlineContentCopy className="w-4 text-xl group-hover:text-primary" />

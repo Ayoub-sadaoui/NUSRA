@@ -124,17 +124,16 @@ export const carouselpc = [
 export const contactInfo = [
   {
     img: phonePc,
-    info: "0780502844 / 0794515934",
+    info: "07 80 50 28 44  /  07 94 51 59 34",
     title: "الهاتف",
   },
   {
     img: emailPc,
-    info: "Nosra07@gmail.com",
+    info: "contact@nosra.online",
     title: "الإيمايل",
   },
   {
     img: socialPc,
-
     social: socialMedia,
     title: "مواقع التواصل",
   },
