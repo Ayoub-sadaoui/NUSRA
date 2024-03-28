@@ -4,11 +4,11 @@ import Title from "./TitleGlobal";
 
 const ContactForm = () => {
   return (
-    <section className="mt-20">
-      <p className="text-secondary text-xl text-center mt-6 mb-3.5 md:w-full lg:hidden">
+    <section className="  max-lg:w-full lg:w-[50%]">
+      <p className="text-secondary text-xl text-center mb-3.5 md:w-full lg:hidden">
         أو
       </p>
-      <h1 className="lg:hidden">
+      <h1 className="lg:hidden ">
         <Title text="ارسل رسالة" />
       </h1>
       <Form />
