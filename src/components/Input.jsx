@@ -18,7 +18,7 @@ const Input = ({ type, name, placeholder }) => {
         ${
           !area.current.value
             ? "sm:group-focus-within:text-[12px] sm:text-xl sm:group-focus-within:text-primary  sm:group-focus-within:-translate-y-4  "
-            : "sm:text-[12px] sm:text-primary sm:-translate-y-4  scroll-smooth"
+            : "sm:text-[12px] sm:text-primary sm:-translate-y-4  "
         }`}
       >
         {placeholder}
