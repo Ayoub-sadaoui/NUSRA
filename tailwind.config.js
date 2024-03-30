@@ -11,6 +11,7 @@ export default {
           "primary-content": "#8F8F8F",
           "bg-footer": "#F79122",
           "neutral-content": "#494845",
+          "base-200": "#403F3C",
           neutral: "#FFFFFF",
         },
         myDark: {
@@ -19,6 +20,7 @@ export default {
           "base-100": "#494845",
           "primary-content": "#F4F4F4",
           "neutral-content": "#FFFFFF",
+          "base-200": "#595959",
           neutral: "#000000",
         },
       },

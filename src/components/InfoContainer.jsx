@@ -9,14 +9,12 @@ const InfoContainer = ({ img, info, title, social }) => {
         <h1 className="text-[22px] font-bold font-Almarai text-primary text-right">
           {title}
         </h1>
-        {info && (
-          <p className="text-2xl font-Almarai font-light pr-5">{info}</p>
-        )}
+        {info && <p className="text-2xl font-Almarai font-light ">{info}</p>}
         {social && (
           <div className="grid grid-cols-2 gap-8">
             {social.map((item, index) => {
               return (
-                <a href={item.link} key={index}>
+                <a href={item.link} target="_blank" key={index}>
                   <div className="flex justify-between gap-1 items-center">
                     <img
                       src={theme === "myLight" ? item.iconLight : item.iconDark}

@@ -10,30 +10,27 @@ const Footer = () => {
   return (
     <footer className="mt-20">
       <div
-        className={`w-full  bg-neutral-content   flex flex-col items-center py-8  sm:hidden `}
+        className={`w-full  bg-base-200   flex flex-col items-center py-8  sm:hidden border-t-2 border-white `}
       >
         <div>
           <img src={orangeLogo} className="h-[90px]" />
         </div>
-        <ul className="mt-7">
+        <ul className="mt-7 text-white">
           {footerLinks.map((link, index) => {
             return (
-              <li
-                key={index}
-                className="text-neutral text-[20px] text-center mt-2"
-              >
+              <li key={index} className=" text-[20px] text-center mt-2">
                 <a href={link.href}>{link.label}</a>
               </li>
             );
           })}
         </ul>
-        <h1 className="text-neutral text-2xl text-center mt-7 tracking-wider ">
+        <h1 className=" text-2xl text-center mt-7 tracking-wider ">
           : تابعونا
         </h1>
         <ul className="flex justify-center items-center gap-3 mt-4">
           {socialMedia.map((social, index) => {
             return (
-              <li key={index} className="text-neutral text-center mt-2">
+              <li key={index} className=" text-center mt-2">
                 <a target="_blank" href={social.link}>
                   <img src={social.icon} className="w-10" />
                 </a>
@@ -43,7 +40,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="max-lg:px-14 bg-neutral-content  w-full flex flex-col max-sm:hidden items-center pt-10 pb-5 pr-4 pl-6">
+      <div className="text-white max-lg:px-14 bg-base-200  w-full flex flex-col max-sm:hidden items-center pt-10 pb-5 pr-4 pl-6 border-t-[3px] border-white">
         <div
           className="w-full  flex flex-wrap gap-y-20 flex-row-reverse 
         justify-between items-start   max-sm:hidden"
@@ -54,29 +51,22 @@ const Footer = () => {
               target="_blank"
               href="https://docs.google.com/forms/d/e/1FAIpQLSfWK_KXrB1bNITfYQ06ZB-UoTAyR3gxe35XRmg-zPZzQt0hDQ/viewform"
             >
-              <button className="border-4 active:scale-95 duration-100 w-fit border-primary font-Aljazeera text-primary hover:text-neutral hover:border-neutral px-8 py-1 rounded-2xl lg:text-[40px] text-3xl ">
+              <button className="border-4 active:scale-95 duration-100 w-fit border-primary font-Aljazeera text-primary hover:text-white hover:border-white px-8 py-1 rounded-2xl lg:text-[40px] text-3xl ">
                 التسجيل
               </button>
             </a>
           </div>
 
           <ul className="flex flex-col justify-center items-left  px-10">
-            <h2 className="lg:text-[45px] text-3xl font-Aljazeera text-neutral text-right">
+            <h2 className="lg:text-[45px] text-3xl font-Aljazeera  text-right">
               تابعنا
             </h2>
             <div className="mt-5 gap-1 flex flex-col">
               {socialMedia.map((social, index) => {
                 return (
-                  <li key={index} className="text-neutral  text-right mt-2">
+                  <li key={index} className="  text-right mt-2">
                     <a target="_blank" href={social.link}>
-                      <FooterLinks
-                        text={social.text}
-                        icon={
-                          theme === "myDark"
-                            ? social.iconLight
-                            : social.iconDark
-                        }
-                      />
+                      <FooterLinks text={social.text} icon={social.iconDark} />
                     </a>
                   </li>
                 );
@@ -85,13 +75,13 @@ const Footer = () => {
           </ul>
 
           <ul className="flex flex-col justify-right items-center   px-10">
-            <h2 className="lg:text-[45px] text-3xl font-Aljazeera text-neutral text-right">
+            <h2 className="lg:text-[45px] text-3xl font-Aljazeera  text-right">
               تصفح
             </h2>
             <div className="mt-5 gap-1 flex flex-col items-end">
               {footerLinks2.map((link, index) => {
                 return (
-                  <li key={index} className="text-neutral  text-right mt-2 ">
+                  <li key={index} className="  text-right mt-2 ">
                     <a href={link.href}>
                       <FooterLinks text={link.label} />
                     </a>
@@ -102,7 +92,7 @@ const Footer = () => {
           </ul>
 
           <div className="px-5 max-sm:hidden">
-            <h2 className="lg:text-[45px] text-3xl font-Aljazeera text-center text-neutral">
+            <h2 className="lg:text-[45px] text-3xl font-Aljazeera text-center ">
               تواصل معنا
             </h2>
             <div className="mt-3">

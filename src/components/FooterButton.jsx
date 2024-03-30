@@ -4,11 +4,12 @@ import { toast } from "react-toastify";
 
 const FooterButton = ({ text, text2, text3 }) => {
   const { theme } = useGlobalContext();
+  const clipboard = text3 ? text3 : text;
   const copy = (text) => {
     if (text2) {
       try {
-        navigator.clipboard.writeText(text);
-        toast.success(` "${text3 ? text3 : text}" coppied`);
+        navigator.clipboard.writeText(clipboard);
+        toast.success(` "${clipboard}" coppied`);
       } catch (err) {
         console.error(err);
       }
@@ -18,7 +19,7 @@ const FooterButton = ({ text, text2, text3 }) => {
     <button
       onClick={() => copy(text)}
       className={`
-      text-secondary bg-neutral group relative  text-xl rounded-lg
+      text-black bg-white group relative  text-xl rounded-lg
        px-5 py-2 h-[43.8px]  font-Aljazeera flex justify-between mt-8 w-full`}
     >
       {text2 ? (
