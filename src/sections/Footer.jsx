@@ -103,11 +103,7 @@ const Footer = () => {
                 <FooterButton text="إتصل بنا" />
               </div>
               <FooterButton text="0780502844" text2="إنسخ الرقم" />
-              <FooterButton
-                text3="contact@nosra.
-              online"
-                text2="إنسخ الإيميل"
-              />
+              <FooterButton text3="contact@nosra.online" text2="إنسخ الإيميل" />
             </div>
           </div>
         </div>

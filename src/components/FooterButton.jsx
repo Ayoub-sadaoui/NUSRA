@@ -26,7 +26,7 @@ const FooterButton = ({ text, text2, text3 }) => {
         <div className="flex justify-between w-full ">
           <div className="w-[2px] h-full bg-black absolute top-0 left-[50%] "></div>
           {text3 && (
-            <p className="text-[16px] w-20 leading-4 font-[400] ">{text3}</p>
+            <p className="text-[16px] w-20 leading-4  font-bold">{text3}</p>
           )}
           <p className="">{text}</p>
           <div className="   flex items-center justify-between w-[110px] text-right ">
