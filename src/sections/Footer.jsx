@@ -49,7 +49,7 @@ const Footer = () => {
             <img src={orangeLogo} alt="" />
             <a
               target="_blank"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfWK_KXrB1bNITfYQ06ZB-UoTAyR3gxe35XRmg-zPZzQt0hDQ/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeZYW8dWHNj9n5BIbweJHG5O3k0hjTKGSrB3Z5AnzrZlRxWXg/viewform?usp=sf_link"
             >
               <button className="border-4 active:scale-95 duration-100 w-fit border-primary font-Aljazeera text-primary hover:text-white hover:border-white px-8 py-1 rounded-2xl lg:text-[40px] text-3xl ">
                 التسجيل

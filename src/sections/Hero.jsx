@@ -54,7 +54,7 @@ const Hero = () => {
         <div className="grid justify-center max-md:items-center  gap-2 mt-8">
           <a
             target="_blank"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfWK_KXrB1bNITfYQ06ZB-UoTAyR3gxe35XRmg-zPZzQt0hDQ/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeZYW8dWHNj9n5BIbweJHG5O3k0hjTKGSrB3Z5AnzrZlRxWXg/viewform?usp=sf_link"
           >
             <button
               className="lg:px-10 lg:py-4  px-6 py-2 rounded-xl font-[400] font-Aljazeera text-2xl lg:text-[42px]
